@@ -1,0 +1,5 @@
+train: datasets/mydata/images/train
+val:   datasets/mydata/images/val
+
+nc: 2
+names: ['small_car', 'large_vehicle']
