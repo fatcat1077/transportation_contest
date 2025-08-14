@@ -256,3 +256,59 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+
+
+# === 系統與暫存檔 ===
+__pycache__/
+*.pyc
+*.pyo
+*.DS_Store
+Thumbs.db
+
+# === 虛擬環境 ===
+venv/
+.env/
+*.env
+
+# === 資料集與標註檔 (不推上雲端) ===
+all_labeled_data/
+datasets/
+data/images/
+data/hyps/         # 若 hyps 是自己調的可保留，否則可忽略
+data/scripts/      # 若有必要才保留
+carnumber/
+classify/
+
+# === 訓練與測試輸出 ===
+runs/
+segment/
+regression_model/carnumber/
+regression_model/car_speed/
+
+# === 中間輸出與測試資料 ===
+2025-06-28/
+2025-06-29/
+2025-07-01/
+2025-07-03/
+2025-07-04/
+2025-07-05/
+2025-07-06/
+
+# === 大型模型檔案 (若需推上 Hugging Face 或自行下載) ===
+*.pt
+*.onnx
+*.engine
+
+# === 特定工具輸出 ===
+utils/aws/
+utils/docker/
+utils/flask_rest_api/
+utils/google_app_engine/
+utils/loggers/wandb/
+utils/loggers/clearml/
+utils/loggers/comet/
+
+# === IDE 設定檔 ===
+.vscode/
+.idea/
