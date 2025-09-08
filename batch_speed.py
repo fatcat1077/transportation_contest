@@ -1,10 +1,12 @@
-from datetime import datetime, date, timedelta
+from datetime import datetime
+
 import pandas as pd
-from speed_app import download_for_date, summarize_day, VEHICLES
+
+from speed_app import VEHICLES, download_for_date, summarize_day
 
 # 批次日期範圍
 start = datetime.strptime("20250701", "%Y%m%d").date()
-end   = datetime.strptime("20250706", "%Y%m%d").date()
+end = datetime.strptime("20250706", "%Y%m%d").date()
 
 # 時段設定：一天抓 0~23 時所有小時
 hours = [f"{h:02d}" for h in range(0, 24)]
